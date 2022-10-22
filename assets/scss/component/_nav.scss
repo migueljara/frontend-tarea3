@@ -1,9 +1,19 @@
 .nav {
+    grid-column-start: 1;
+    grid-column-end: 2;
+    grid-row-start: 1;
+    grid-row-end: 2;
     background-color: #e4cdc1;
     display: flex;
+    flex-flow: row wrap;
     align-items: center;
     justify-content: space-between;
     padding: 12px 13px;
+
+    @media (max-width: 560px) {
+        justify-content: center;
+    }
+
     &__icon {
         display: flex;
         align-items: center;
@@ -15,7 +25,6 @@
         &__link { 
             & a {
                 padding: 8px;
-                text-align: center;
                 text-decoration: none;
                 &:hover {
                     color: rgba(#000000, .9);
