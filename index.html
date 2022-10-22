@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tarea 2</title>
+    <link rel="stylesheet" href="assets/css/style.css">
+</head>
+
+<body>
+    <div class="structure">
+        <nav class="nav">
+            <div class="nav__icon">
+                <img src="./assets/img/logo.png" alt="Logo" width="60" height="60">
+                <span>Como en Casa</span>
+            </div>
+            <ul class="nav__links">
+                <li class="nav__links__link nav__links__link--active">
+                    <a href="#">Inicio</a>
+                </li>
+                <li class="nav__links__link">
+                    <a href="#">Nuestra Carta</a>
+                </li>
+                <li class="nav__links__link">
+                    <a href="#">Información</a>
+                </li>
+                <li class="nav__links__link">
+                    <a href="#">Contacto</a>
+                </li>
+            </ul>
+        </nav>
+        <main class="principal">
+            <section class="principal__carousel">
+                <div class="principal__carousel__slide fade">
+                    <img src="./assets/img/cazuela.jpg" height="600">
+                </div>
+                <div class="principal__carousel__slide fade">
+                    <img src="./assets/img/empanadas.png" height="600">
+                </div>
+
+                <div class="principal__carousel__slide fade">
+                    <img src="./assets/img/porotos.jpg" height="600">
+                </div>
+
+                <a class="principal__carousel__arrow" onclick="plusSlide(-1)">❮</a>
+                <a class="principal__carousel__arrow principal__carousel__arrow--next" onclick="plusSlide(1)">❯</a>
+            </section>
+            <section class="principal__notice">
+                <h1 class="principal__notice__title">¡Bienvenido a su Casa!</h1>
+                <p class="principal__notice__phrase">Donde el sabor y la frescura de los ingredientes son igual al de la
+                    niñes. Comparte una excelente experiencia con nosotros la cual estaremos agradecidos de recibirte
+                </p>
+            </section>
+            <section class="principal__menus">
+                <div class="principal__menus__menu principal__menus__menu--left">
+                    <h1 class="principal__menus__menu__title">Menu 2P</h1>
+                    <h1 class="principal__menus__menu__title principal__menus__menu__title--price">($18.000)</h1>
+                    <ul class="principal__menus__menu__items">
+                        <li class="principal__menus__menu__items__item">2 bebidas</li>
+                        <li class="principal__menus__menu__items__item">2 platos premium</li>
+                        <li class="principal__menus__menu__items__item">1 ensalada surtida pequeña</li>
+                        <li class="principal__menus__menu__items__item">2 arroz con leche</li>
+                    </ul>
+                </div>
+                <div class="principal__menus__menu principal__menus__menu--center">
+                    <h1 class="principal__menus__menu__title">Menu 3P</h1>
+                    <h1 class="principal__menus__menu__title principal__menus__menu__title--price">($26.500)</h1>
+                    <ul class="principal__menus__menu__items">
+                        <li class="principal__menus__menu__items__item">3 bebidas</li>
+                        <li class="principal__menus__menu__items__item">3 platos premium</li>
+                        <li class="principal__menus__menu__items__item">1 ensalada surtida mediana</li>
+                        <li class="principal__menus__menu__items__item">3 arroz con leche o manzana asada</li>
+                    </ul>
+                </div>
+                <div class="principal__menus__menu">
+                    <h1 class="principal__menus__menu__title">Menu 4P</h1>
+                    <h1 class="principal__menus__menu__title principal__menus__menu__title--price">($37.000)</h1>
+                    <ul class="principal__menus__menu__items">
+                        <li class="principal__menus__menu__items__item">4 bebidas</li>
+                        <li class="principal__menus__menu__items__item">3 platos premium y 1 plato regular</li>
+                        <li class="principal__menus__menu__items__item">1 ensalada surtida grande</li>
+                        <li class="principal__menus__menu__items__item">4 arroz con leche, manzana asada o macedonia
+                        </li>
+                    </ul>
+                </div>
+            </section>
+        </main>
+        <footer class="footer">
+            <span class="footer__line">Como en Casa&#174;</span>
+            <span class="footer__line">Fono:+56987654321</span>
+            <span class="footer__line">Dirección: Av. Casa #123</span>
+        </footer>
+    </div>
+    <script src="./assets/js/carousel.js"></script>
+</body>
+
+</html>
